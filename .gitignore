@@ -1,7 +1,7 @@
 build
 dist
 app
-app.spec
 
-front.jpg
-back.jpg
+img/front.jpg
+img/back.jpg
+__pycache__
