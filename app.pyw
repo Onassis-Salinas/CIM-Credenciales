@@ -5,7 +5,7 @@ import textwrap
 from datetime import datetime
 from os import startfile
 
-wb = load_workbook("\\\\cim-nas\\Servidor_Recursos_Humanos\\RECURSOS HUMANOS 2024\\FORMATOS RH\\PLANTILLA 2024.xlsx")
+wb = load_workbook("\\\\cim-nas\\Servidor_Recursos_Humanos\\RECURSOS HUMANOS 2025\\FORMATOS RH\\PLANTILLA 2025.xlsx")
 ws = wb["activos"]
 
 
@@ -94,7 +94,7 @@ def generateImage(
     baseImage = Image.open("img\\frontbase.png").convert("RGBA")
     draw = ImageDraw.Draw(baseImage)
     try:
-        photo = Image.open(f"\\\\cim-nas\\Servidor_Recursos_Humanos\\RECURSOS HUMANOS 2024\\CREDENCIALES\\FOTOS PARA CREDENCIALES\\Foto Sin fondo\\{number}.png")
+        photo = Image.open(f"\\\\cim-nas\\Servidor_Recursos_Humanos\\RECURSOS HUMANOS 2025\\CREDENCIALES\\FOTOS PARA CREDENCIALES\\Foto Sin fondo\\{number}.png")
     except FileNotFoundError:
         return error.configure(text="No se encontro la foto")
 
